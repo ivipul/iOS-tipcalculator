@@ -19,6 +19,8 @@
 		B7776C60194F8E84009F09D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7776C48194F8E84009F09D5 /* UIKit.framework */; };
 		B7776C68194F8E84009F09D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7776C66194F8E84009F09D5 /* InfoPlist.strings */; };
 		B7776C6A194F8E84009F09D5 /* tipcalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7776C69194F8E84009F09D5 /* tipcalcTests.m */; };
+		B7776C76194F8FB7009F09D5 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7776C74194F8FB7009F09D5 /* TipViewController.m */; };
+		B7776C78194F8FEA009F09D5 /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7776C7A194F8FEA009F09D5 /* TipViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		B7776C65194F8E84009F09D5 /* tipcalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tipcalcTests-Info.plist"; sourceTree = "<group>"; };
 		B7776C67194F8E84009F09D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B7776C69194F8E84009F09D5 /* tipcalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tipcalcTests.m; sourceTree = "<group>"; };
+		B7776C73194F8FB7009F09D5 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		B7776C74194F8FB7009F09D5 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		B7776C79194F8FEA009F09D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TipViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				B7776C54194F8E84009F09D5 /* AppDelegate.m */,
 				B7776C56194F8E84009F09D5 /* Images.xcassets */,
 				B7776C4B194F8E84009F09D5 /* Supporting Files */,
+				B7776C73194F8FB7009F09D5 /* TipViewController.h */,
+				B7776C74194F8FB7009F09D5 /* TipViewController.m */,
+				B7776C7A194F8FEA009F09D5 /* TipViewController.xib */,
 			);
 			path = tipcalc;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7776C78194F8FEA009F09D5 /* TipViewController.xib in Resources */,
 				B7776C4F194F8E84009F09D5 /* InfoPlist.strings in Resources */,
 				B7776C57194F8E84009F09D5 /* Images.xcassets in Resources */,
 			);
@@ -240,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7776C55194F8E84009F09D5 /* AppDelegate.m in Sources */,
+				B7776C76194F8FB7009F09D5 /* TipViewController.m in Sources */,
 				B7776C51194F8E84009F09D5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +287,14 @@
 				B7776C67194F8E84009F09D5 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B7776C7A194F8FEA009F09D5 /* TipViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7776C79194F8FEA009F09D5 /* en */,
+			);
+			name = TipViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,7 +380,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tipcalc/tipcalc-Prefix.pch";
 				INFOPLIST_FILE = "tipcalc/tipcalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -375,7 +395,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tipcalc/tipcalc-Prefix.pch";
 				INFOPLIST_FILE = "tipcalc/tipcalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
